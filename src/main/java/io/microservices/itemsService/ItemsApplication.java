@@ -7,10 +7,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-//@EnableEurekaClient
+@EnableEurekaClient
 @EntityScan("io.microservices.itemsService.beans")
 @EnableJpaRepositories("io.microservices.itemsService.repositories")
-@ComponentScan("io.microservices.itemsService.controllers")
+@ComponentScan("io.microservices.itemsService")
 @SpringBootApplication
 public class ItemsApplication {
 
